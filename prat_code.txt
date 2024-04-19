@@ -1,0 +1,123 @@
+tudent@MIT-ICT-LAB3-28:/opt/ns-allinone-3.35/ns-3.35$ ./waf --run scratch/first
+Waf: Entering directory `/opt/ns-allinone-3.35/ns-3.35/build'
+Waf: Leaving directory `/opt/ns-allinone-3.35/ns-3.35/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (0.439s)
+AnimationInterface WARNING:Node:0 Does not have a mobility model. Use SetConstantPosition if it is stationary
+AnimationInterface WARNING:Node:1 Does not have a mobility model. Use SetConstantPosition if it is stationary
+AnimationInterface WARNING:Node:2 Does not have a mobility model. Use SetConstantPosition if it is stationary
+AnimationInterface WARNING:Node:3 Does not have a mobility model. Use SetConstantPosition if it is stationary
+AnimationInterface WARNING:Node:4 Does not have a mobility model. Use SetConstantPosition if it is stationary
+AnimationInterface WARNING:Node:0 Does not have a mobility model. Use SetConstantPosition if it is stationary
+AnimationInterface WARNING:Node:1 Does not have a mobility model. Use SetConstantPosition if it is stationary
+AnimationInterface WARNING:Node:2 Does not have a mobility model. Use SetConstantPosition if it is stationary
+AnimationInterface WARNING:Node:3 Does not have a mobility model. Use SetConstantPosition if it is stationary
+AnimationInterface WARNING:Node:4 Does not have a mobility model. Use SetConstantPosition if it is stationary
+At time +2s client sent 2048 bytes to 10.1.1.2 port 9
+At time +2.5s client sent 2048 bytes to 10.1.1.2 port 9
+At time +3s client sent 2048 bytes to 10.1.1.2 port 9
+At time +3.5s client sent 2048 bytes to 10.1.1.2 port 9
+At time +4s client sent 2048 bytes to 10.1.1.2 port 9
+At time +4.5s client sent 2048 bytes to 10.1.1.2 port 9
+At time +5s client sent 2048 bytes to 10.1.1.2 port 9
+At time +5.5s client sent 2048 bytes to 10.1.1.2 port 9
+At time +6s client sent 2048 bytes to 10.1.1.2 port 9
+At time +6.5s client sent 2048 bytes to 10.1.1.2 port 9
+student@MIT-ICT-LAB3-28:/opt/ns-allinone-3.35/ns-3.35$ awk -f throughput.awk
+
+
+Average_Throughput=-nan bits/second
+
+
+student@MIT-ICT-LAB3-28:/opt/ns-allinone-3.35/ns-3.35$ ./NetAnim
+bash: ./NetAnim: No such file or directory
+student@MIT-ICT-LAB3-28:/opt/ns-allinone-3.35/ns-3.35$ ./waf --run scratch/first
+Waf: Entering directory `/opt/ns-allinone-3.35/ns-3.35/build'
+[2081/2131] Compiling scratch/first.cc
+[2092/2131] Linking build/scratch/first
+Waf: Leaving directory `/opt/ns-allinone-3.35/ns-3.35/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (2.525s)
+At time +2s client sent 1024 bytes to 10.1.1.2 port 9
+At time +2.00369s server received 1024 bytes from 10.1.1.1 port 49153
+At time +2.00369s server sent 1024 bytes to 10.1.1.1 port 49153
+At time +2.00737s client received 1024 bytes from 10.1.1.2 port 9
+student@MIT-ICT-LAB3-28:/opt/ns-allinone-3.35/ns-3.35$ ./waf --run scratch/first
+Waf: Entering directory `/opt/ns-allinone-3.35/ns-3.35/build'
+Waf: Leaving directory `/opt/ns-allinone-3.35/ns-3.35/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (0.433s)
+At time +2s client sent 1024 bytes to 10.1.1.2 port 9
+At time +2.00369s server received 1024 bytes from 10.1.1.1 port 49153
+At time +2.00369s server sent 1024 bytes to 10.1.1.1 port 49153
+At time +2.00737s client received 1024 bytes from 10.1.1.2 port 9
+student@MIT-ICT-LAB3-28:/opt/ns-allinone-3.35/ns-3.35$ awk -f pdf.awk mixed-global-routing.tr
+
+
+Number of Packet Sent=1.000000  
+Number of Packet Dropped=0.000000  
+Number of Packet Received=1.000000  
+Packet Delivery Fraction (PDF)=100.000000 percent  
+
+
+student@MIT-ICT-LAB3-28:/opt/ns-allinone-3.35/ns-3.35$ awk -f pdf.awk
+
+
+
+Number of Packet Sent=1.000000  
+Number of Packet Dropped=0.000000  
+Number of Packet Received=1.000000  
+Packet Delivery Fraction (PDF)=100.000000 percent  
+
+
+student@MIT-ICT-LAB3-28:/opt/ns-allinone-3.35/ns-3.35$ awk -f delay.awk mixed-global-routing.tr
+Average_delay=-nan Seconds 
+student@MIT-ICT-LAB3-28:/opt/ns-allinone-3.35/ns-3.35$ awk -f delay.awk
+
+
+
+Average_delay=-nan Seconds 
+student@MIT-ICT-LAB3-28:/opt/ns-allinone-3.35/ns-3.35$ awk -f delay.awk 
+Average_delay=-nan Seconds 
+student@MIT-ICT-LAB3-28:/opt/ns-allinone-3.35/ns-3.35$ awk -f delay.awk mixed-global-routing.tr0
+awk: cannot open mixed-global-routing.tr0 (No such file or directory)
+student@MIT-ICT-LAB3-28:/opt/ns-allinone-3.35/ns-3.35$ awk -f delay.awk mixed-global-routing.tr
+Average_delay=-nan Seconds 
+student@MIT-ICT-LAB3-28:/opt/ns-allinone-3.35/ns-3.35$ awk -f delay.awk mixed-global-routing.tr
+Average_delay=0.007370 Seconds 
+student@MIT-ICT-LAB3-28:/opt/ns-allinone-3.35/ns-3.35$ awk -f throughput.awk mixed-global-routing.tr
+
+
+Average_Throughput=-nan bits/second
+
+
+student@MIT-ICT-LAB3-28:/opt/ns-allinone-3.35/ns-3.35$ awk -f throughput.awk mixed-global-routing.tr
+
+
+Average_Throughput=1141926.729986 bits/second
+
+
+student@MIT-ICT-LAB3-28:/opt/ns-allinone-3.35/ns-3.35$ 
+student@MIT-ICT-LAB3-28:/opt/ns-allinone-3.35/ns-3.35$ awk -f pdf-graph.awk mixed-global-routing.tr
+2.000000	 100.000000	
+2.000000	 100.000000	
+2.003690	 100.000000	
+2.003690	 100.000000	
+2.003690	 100.000000	
+2.007370	 100.000000	
+student@MIT-ICT-LAB3-28:/opt/ns-allinone-3.35/ns-3.35$ awk -f pdf-graph.awk mixed-global-routing.tr>pq.txt
+student@MIT-ICT-LAB3-28:/opt/ns-allinone-3.35/ns-3.35$ awk -f pdf-graph.awk mixed-global-routing.tr>pq.txt
+student@MIT-ICT-LAB3-28:/opt/ns-allinone-3.35/ns-3.35$ gnuplot pdf-graphcode
+student@MIT-ICT-LAB3-28:/opt/ns-allinone-3.35/ns-3.35$ gnuplot pdf-graphcode
+student@MIT-ICT-LAB3-28:/opt/ns-allinone-3.35/ns-3.35$ gnuplot pdf-graphcode
+student@MIT-ICT-LAB3-28:/opt/ns-allinone-3.35/ns-3.35$ gnuplot pdf-graphcode
+student@MIT-ICT-LAB3-28:/opt/ns-allinone-3.35/ns-3.35$ awk -f pdf-graph.awk mixed-global-routing.tr>pq.txt
+student@MIT-ICT-LAB3-28:/opt/ns-allinone-3.35/ns-3.35$ gnuplot pdf-graphcode
+student@MIT-ICT-LAB3-28:/opt/ns-allinone-3.35/ns-3.35$ gnuplot pdf-graphcode
+student@MIT-ICT-LAB3-28:/opt/ns-allinone-3.35/ns-3.35$ awk -f pdf-graph.awk mixed-global-routing.tr>pq.txt
+student@MIT-ICT-LAB3-28:/opt/ns-allinone-3.35/ns-3.35$ gnuplot pdf-graphcode
+student@MIT-ICT-LAB3-28:/opt/ns-allinone-3.35/ns-3.35$ gnuplot pdf-graphcode
+student@MIT-ICT-LAB3-28:/opt/ns-allinone-3.35/ns-3.35$ gnuplot pdf-graphcode
+"pdf-graphcode" line 9: warning: Cannot find or open file "pq.txt"
+student@MIT-ICT-LAB3-28:/opt/ns-allinone-3.35/ns-3.35$ gnuplot pdf-graphcode
+student@MIT-ICT-LAB3-28:/opt/ns-allinone-3.35/ns-3.35$
